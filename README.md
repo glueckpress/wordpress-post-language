@@ -2,7 +2,7 @@
 
 This README file currently contains the draft for a blog post. [Look here](https://github.com/glueckpress/wordpress-post-language/issues/1) for context.
 
-![Post Language](https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/wordpress-post-language-logo.png)
+![wordpress-post-language-logo](https://cloud.githubusercontent.com/assets/308422/2893702/18b89a84-d54b-11e3-8cd5-227277bb56a0.png)
 
 ## Proposing a WordPress Core feature: Post Language
 
