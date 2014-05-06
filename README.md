@@ -1,8 +1,8 @@
 # Post Language
 
-Proposing a WordPress Core feature: Post Language
+This README file currently contains the draft for a blog post. [Look here](https://github.com/glueckpress/wordpress-post-language/issues/1) for context.
 
-## Title: Proposing a WordPress Core feature: Post Language
+## Proposing a WordPress Core feature: Post Language
 
 Solutions to language related problems with content in WordPress are somewhat rare. Whereas a growing number of users publish content in other languages than default American English, WordPress Core up until today does not offer any feature to determine, nor to retrieve the language a post or page has been written in. This article aims to provide context and arguments for Trac ticket #_____ which proposes the implementation of a new Core feature: Post Language.
 
