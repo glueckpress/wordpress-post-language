@@ -2,7 +2,7 @@
 
 This README file currently contains the draft for a blog post. [Look here](https://github.com/glueckpress/wordpress-post-language/issues/1) for context.
 
-![wordpress-post-language-logo](https://cloud.githubusercontent.com/assets/308422/2893702/18b89a84-d54b-11e3-8cd5-227277bb56a0.png)
+![wordpress-post-language-logo](https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/wordpress-post-language-logo.png?raw=true)
 
 ## Proposing a WordPress Core feature: Post Language
 
@@ -101,3 +101,10 @@ I am convinced a Post Language selection field as described above would embody a
 
 <h3 id="feedback">Feedback</h3>
 [Yes, please.](https://github.com/glueckpress/wordpress-post-language/issues/1)
+
+<hr>
+
+## Contributors
+@glueckpress (initiation), @remkus (feedback), @ocean90 (feedback)
+
+A side-project supported by <a href="http://inpsyde.com"><img src="https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/inpsyde.png?raw=true" width="16" height="16"> Inpsyde</a>.
