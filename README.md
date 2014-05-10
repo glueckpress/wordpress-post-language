@@ -32,7 +32,7 @@ The language of post content
 	<li>is one of the most important parameters for plugin and theme developers to tackle the already complex field of language and translation.</li>
 </ul>
 <h3 id="core">Why Core?</h3>
-According to this <a href="https://cloud.githubusercontent.com/assets/308422/2892199/3e112636-d53a-11e3-8c16-3d1bb07948b5.png">screenshot</a> (which is the best data I have been able to get a hold of so far, thanks Zé!), by April 29, 2014 WordPress 3.9 has been downloaded roughly 1.36 times more often in other languages than the default US English. In other words:
+According to this <a href="https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/2014-04-29_17-11-48.png?raw=true">screenshot</a> (which is the best data I have been able to get a hold of so far, thanks Zé!), by April 29, 2014 WordPress 3.9 has been downloaded roughly 1.36 times more often in other languages than the default US English. In other words:
 
 <strong>More than every second Core download is in another language than English.</strong>
 
