@@ -105,6 +105,6 @@ I am convinced a Post Language selection field as described above would embody a
 <hr>
 
 ## Contributors
-@glueckpress (initiation), @defries (feedback), @ocean90 (feedback), @bueltge (feedback)
+@glueckpress (initiation), @defries (feedback), @ocean90 (feedback), @bueltge (feedback), @toscho (feedback)
 
 A side-project supported by <a href="http://inpsyde.com"><img src="https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/inpsyde.png?raw=true" width="16" height="16"> Inpsyde</a>.
