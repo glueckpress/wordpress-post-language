@@ -160,9 +160,9 @@ class Post_Language {
 	 * @param mixed $post
 	 * @return string
 	 */
-	private static function register_post_language( $post_id, $post ) {
+	public static function register_post_language( $post_id, $post ) {
 
-		$post_language = self::get_post_language();
+		$post_language = self::get_post_language( $post_id );
 
 		if ( ! empty( $_POST['post_language'] ) )
 			$post_language = $_POST['post_language'];
