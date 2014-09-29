@@ -138,17 +138,19 @@ class Post_Language {
 
 		// @todo Replace static dummy languages with to-be-created object data.
 
+		if ( ! is_multisite() ) {
+			echo '<p>This does not work without multisite. See GitHub for explanation of why, and how we can fix this ... https://github.com/glueckpress/wordpress-post-language/issues/7#issuecomment-57152121</p>';
+		}
+
 		?>
 		<label><?php _e( 'This post is written in', 'post-language' ); ?></label>
 		<select name="post_language" id="post-language">
-			<option<?php selected( 'en_EN', $post_language ); ?> value="en_EN"><?php _e( 'English (US)',  'post-language' ) ?></option>
-			<option<?php selected( 'en_GB', $post_language ); ?> value="en_GB"><?php _e( 'English (UK)',  'post-language' ) ?></option>
-			<option<?php selected( 'de_DE', $post_language ); ?> value="de_DE"><?php _e( 'Deutsch (DE)',  'post-language' ) ?></option>
-			<option<?php selected( 'de_CH', $post_language ); ?> value="de_CH"><?php _e( 'Deutsch (CH)',  'post-language' ) ?></option>
-			<option<?php selected( 'fr_FR', $post_language ); ?> value="fr_FR"><?php _e( 'Français (FR)', 'post-language' )  ?></option>
-			<option<?php selected( 'fr_CH', $post_language ); ?> value="fr_CH"><?php _e( 'Français (CH)', 'post-language' )  ?></option>
-		</select>
 		<?php
+			$languages = get_available_languages();
+			$current_language = get_site_option( 'WPLANG' ); // NEEDS FIXED!!! This should grab the current language, not the site language
+			echo mu_dropdown_languages( $languages, $current_language );
+		?>
+		</select><?php
 	}
 
 	/**
