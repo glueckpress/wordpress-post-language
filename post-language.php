@@ -147,9 +147,8 @@ class Post_Language {
 		<select name="post_language" id="post-language">
 		<?php
 			$languages = get_available_languages();
-			$current_language = get_site_option( 'WPLANG' ); // NEEDS FIXED!!! This should grab the current language, not the site language
-			echo mu_dropdown_languages( $languages, $current_language );
-		?>
+			echo mu_dropdown_languages( $languages, $post_language );
+			?>
 		</select><?php
 	}
 
