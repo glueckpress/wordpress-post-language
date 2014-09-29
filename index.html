@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>WordPress Post Language by glueckpress</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>WordPress Post Language</h1>
+        <p>Proposal for a new WordPress Core feature to determine and retrieve the language a post has been written in.</p>
+
+        <p class="view"><a href="https://github.com/glueckpress/wordpress-post-language">View the Project on GitHub <small>glueckpress/wordpress-post-language</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/glueckpress/wordpress-post-language/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/glueckpress/wordpress-post-language/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/glueckpress/wordpress-post-language">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><img src="https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/wordpress-post-language-logo.png?raw=true" alt="wordpress-post-language-logo"></p>
+
+<h1>
+<a name="post-language" class="anchor" href="#post-language"><span class="octicon octicon-link"></span></a>Post Language</h1>
+
+<h2>
+<a name="proposing-a-wordpress-core-feature-post-language" class="anchor" href="#proposing-a-wordpress-core-feature-post-language"><span class="octicon octicon-link"></span></a>Proposing a WordPress Core feature: Post Language</h2>
+
+<p>Solutions to language related problems with content in WordPress are somewhat rare. Whereas a growing number of users publish content in other languages than default American English, WordPress Core up until today does not offer any feature to determine, nor to retrieve the language a post or page has been written in. This article aims to provide context and arguments for Trac ticket #_____ which proposes the implementation of a new Core feature: Post Language.</p>
+
+<h3>
+<a name="table-of-contents" class="anchor" href="#table-of-contents"><span class="octicon octicon-link"></span></a>Table of contents</h3>
+
+<ul>
+<li><a href="#terminology">Terminology</a></li>
+    <li><a href="#the-case">The Case</a></li>
+    <li><a href="#why-core">Why Core?</a></li>
+    <li><a href="#the-feature">The Feature</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#feedback">Feeback</a></li>
+</ul><h3>
+<a name="terminology" class="anchor" href="#terminology"><span class="octicon octicon-link"></span></a>Terminology</h3>
+
+<p><strong>post:</strong> Database entry of the default post types <em>post</em> or <em>page</em>. Other post types are referred to by their names, like i.e. <em>attachments</em>.</p>
+
+<p><strong>Core</strong> (capitalized): The WordPress core software as available on WordPress.org.</p>
+
+<h3>
+<a name="the-case" class="anchor" href="#the-case"><span class="octicon octicon-link"></span></a>The Case</h3>
+
+<p>WordPress Core does  not (yet) provide any functionality or parameter for authors to determine the language of a singular post or page. In other words: one cannot simply mark a post as being written in a particular language.</p>
+
+<p>So? Offering a basic opportunity to users for them to store the language of their content along with other post meta information would provide a new level of empowerment for both, users and developers.</p>
+
+<p>The language of post content</p>
+
+<ul>
+<li>is a highly relevant piece of post meta information in general;</li>
+    <li>is one of the most important parameters for plugin and theme developers to tackle the already complex field of language and translation.</li>
+</ul><h3>
+<a name="why-core" class="anchor" href="#why-core"><span class="octicon octicon-link"></span></a>Why Core?</h3>
+
+<p>According to this <a href="https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/2014-04-29_17-11-48.png?raw=true">screenshot</a> (which is the best data I have been able to get a hold of so far, thanks Zé!), by April 29, 2014 WordPress 3.9 has been downloaded roughly 1.36 times more often in other languages than the default US English. In other words:</p>
+
+<p><strong>More than every second Core download is in another language than English.</strong></p>
+
+<pre><code>Total Core downloads: 6.589.287 (100%)
+Default English: 2.807.978 (42.6%)
+Others: 3.781.309 (57.4%)
+(Data from April 29, 2014)
+</code></pre>
+
+<p>Core should not be agnostic of that trend.</p>
+
+<p>Certainly not every site running WordPress in a different language than English will raise the need for content in more than that one language. Nonetheless, numbers above indicate that for a growing number of users world-wide language is or might become a highly substantial parameter.</p>
+
+<p>On a side note: Given the fact we have fancy things like <em>Post Formats</em> in Core, the lack of a <em>Post Language</em> field seems somewhat odd. What do post formats do essentially besides giving theme authors a <del>toy</del> tool to <del>gamify</del> improve user experience in the front-end? Similarly, a Post Language field could just offer a simple value for developers to build upon–with only a minimum of functionality attached by default.</p>
+
+<p>After all, WordPress is all about publishing content, and content inevitably has to do with language. We can’t honestly claim to “<a href="http://wordpressfoundation.org/">democratize publishing</a>” while we continue to just ignore the relevance of linguistic aspects regarding content for WordPress users around the world.</p>
+
+<h3>
+<a name="the-feature" class="anchor" href="#the-feature"><span class="octicon octicon-link"></span></a>The Feature</h3>
+
+<p>The Post Language feature should place a label within the Publish Post meta box indicating language selection, for example: “This post is written in”.</p>
+
+<p>It then should place a select box next to the label with a selection of languages previously defined through either the language packs available within the given WordPress install, or a filter.</p>
+
+<p><img src="https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/missing-field-2.png?raw=true" alt="Publish Post Meta Box with proposed language select field"><em>Proposed Post Language select field</em></p>
+
+<p>The selection of a language would return the ISO code for that language and store it in a database field. This could be a post meta field, or an extra field that would have to be added to the database table.</p>
+
+<p><img src="https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/missing-field-4.png?raw=true" alt="Publish Post Meta Box with proposed language select field (expanded)"><em>Proposed Post Language select field (expanded)</em></p>
+
+<p>The value for Post Language</p>
+
+<ul>
+<li>should be made accessible through template tags:
+
+<ul>
+<li><code>the_post_language()</code></li>
+<li><code>get_the_post_language()</code></li>
+</ul>
+</li>
+<li>should possibly affect
+
+<ul>
+<li><code>get_bloginfo( 'language' )</code></li>
+<li><code>get_bloginfo( 'text-direction' )</code></li>
+<li>(and thus <code>language_attributes()</code>)</li>
+</ul>
+</li>
+<li>OR should be implemented via a new attribute on a per-post basis, similar to <code>post_class()</code>:
+
+<ul>
+<li><code>post_language()</code></li>
+</ul>
+</li>
+</ul><pre><code>&lt;article &lt;?php post_class(); ?&gt; &lt;?php post_language(); ?&gt;&gt;
+
+// ouput:
+
+&lt;article class="foo bar" lang="en-US"&gt;
+
+</code></pre>
+
+<ul>
+<li>could, but would not have to consider microformats like <a href="http://schema.org/inLanguage">http://schema.org/inLanguage</a>.</li>
+</ul><p>Finally, it probably would not make sense to have the Post Language feature enabled by default. Instead it could be enabled through</p>
+
+<ul>
+<li>a constant: <code>define( 'WP_POST_LANGUAGE', true )</code> (similar to <code>WPLANG</code>),</li>
+<li>or, more likely, through a filter: <code>add_filter( 'post_language', $locale )</code>,</li>
+<li>and maybe through a setting in Settings &gt; General which would be disabled by default.</li>
+</ul><h3>
+<a name="conclusion" class="anchor" href="#conclusion"><span class="octicon octicon-link"></span></a>Conclusion</h3>
+
+<p>One does not simply add features to WordPress Core, this I know. While the actual translation of content most certainly should remain plugin territory, Core should ultimately come to honor the relevance of language-related solutions for a huge part of the WordPress community.</p>
+
+<p>I am convinced a Post Language selection field as described above would embody a quite elegant solution to an overdue problem: very basic, non-costly to those who don’t use it, yet most useful to those who were able to build upon it.</p>
+
+<h3>
+<a name="feedback" class="anchor" href="#feedback"><span class="octicon octicon-link"></span></a>Feedback</h3>
+
+<p><a href="https://github.com/glueckpress/wordpress-post-language/issues/">Yes please, just take the time reading through issues first. If you’re not a developer and just would like your support, we’d appreciate a tweet or blog post rather than an issue comment.</a></p>
+
+<hr><h2>
+<a name="collaborators" class="anchor" href="#collaborators"><span class="octicon octicon-link"></span></a>Collaborators</h2>
+
+<ul>
+<li><a href="https://github.com/glueckpress" class="user-mention">@glueckpress</a></li>
+<li><a href="https://github.com/neverything" class="user-mention">@neverything</a></li>
+<li>@ryanhellier</li>
+<li><a href="https://github.com/mamaduka" class="user-mention">@mamaduka</a></li>
+</ul><h3>
+<a name="feedback-contributions" class="anchor" href="#feedback-contributions"><span class="octicon octicon-link"></span></a>Feedback Contributions</h3>
+
+<ul>
+<li><a href="https://github.com/defries" class="user-mention">@defries</a></li>
+<li><a href="https://github.com/ocean90" class="user-mention">@ocean90</a></li>
+<li><a href="https://github.com/bueltge" class="user-mention">@bueltge</a></li>
+<li><a href="https://github.com/toscho" class="user-mention">@toscho</a></li>
+</ul><p>A side-project supported by <a href="http://inpsyde.com"><img src="https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/inpsyde.png?raw=true" width="16" height="16"> Inpsyde</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/glueckpress">glueckpress</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
