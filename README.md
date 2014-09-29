@@ -1,9 +1,6 @@
-# Post Language
-
-This README file currently contains the draft for a blog post. [Look here](https://github.com/glueckpress/wordpress-post-language/issues/1) for context.
-
 ![wordpress-post-language-logo](https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/wordpress-post-language-logo.png?raw=true)
 
+# Post Language
 ## Proposing a WordPress Core feature: Post Language
 
 Solutions to language related problems with content in WordPress are somewhat rare. Whereas a growing number of users publish content in other languages than default American English, WordPress Core up until today does not offer any feature to determine, nor to retrieve the language a post or page has been written in. This article aims to provide context and arguments for Trac ticket #_____ which proposes the implementation of a new Core feature: Post Language.
@@ -55,15 +52,13 @@ The Post Language feature should place a label within the Publish Post meta box 
 
 It then should place a select box next to the label with a selection of languages previously defined through either the language packs available within the given WordPress install, or a filter.
 
-<img class="size-full wp-image-5374" src="http://glueckpress.com/wp-content/uploads/2014/05/missing-field-2.png" alt="Publish Post Meta Box with proposed language select field" width="277" height="277" />
-
-<small>Proposed Post Language select field</small>
+![Publish Post Meta Box with proposed language select field](https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/missing-field-2.png?raw=true)
+_Proposed Post Language select field_
 
 The selection of a language would return the ISO code for that language and store it in a database field. This could be a post meta field, or an extra field that would have to be added to the database table.
 
-<img class="size-full wp-image-5376" src="http://glueckpress.com/wp-content/uploads/2014/05/missing-field-4.png" alt="Publish Post Meta Box with proposed language select field (expanded)" width="276" height="298" />
-
-<small>Proposed Post Language select field (expanded)</small>
+![Publish Post Meta Box with proposed language select field (expanded)](https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/missing-field-4.png?raw=true)
+_Proposed Post Language select field (expanded)_
 
 The value for Post Language
 
@@ -100,11 +95,19 @@ One does not simply add features to WordPress Core, this I know. While the actua
 I am convinced a Post Language selection field as described above would embody a quite elegant solution to an overdue problem: very basic, non-costly to those who don’t use it, yet most useful to those who were able to build upon it.
 
 <h3 id="feedback">Feedback</h3>
-[Yes, please.](https://github.com/glueckpress/wordpress-post-language/issues/1)
+[Yes please, just take the time reading through issues first. If you’re not a developer and just would like your support, we’d appreciate a tweet or blog post rather than an issue comment.](https://github.com/glueckpress/wordpress-post-language/issues/)
 
 <hr>
+## Collaborators
+* @glueckpress
+* @neverything
+* @ryanhellier
+* @mamaduka
 
-## Contributors
-@glueckpress (initiation), @defries (feedback), @ocean90 (feedback), @bueltge (feedback), @toscho (feedback)
+### Feedback Contributions
+* @defries
+* @ocean90
+* @bueltge
+* @toscho
 
 A side-project supported by <a href="http://inpsyde.com"><img src="https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/inpsyde.png?raw=true" width="16" height="16"> Inpsyde</a>.
