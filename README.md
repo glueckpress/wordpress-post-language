@@ -101,7 +101,7 @@ I am convinced a Post Language selection field as described above would embody a
 ## Collaborators
 * @glueckpress
 * @neverything
-* @ryanhellier
+* @ryanhellyer
 * @mamaduka
 
 ### Feedback Contributions
