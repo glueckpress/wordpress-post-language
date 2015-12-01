@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Post Language
- * Version: 0.1
+ * Version:     0.1
  * Description: Implements the long lost language core feature for WordPress.
- * Author: Caspar Hübinger
- * Author URI: http://glueckpress.com/
- * Plugin URI: https://github.com/glueckpress/wordpress-post-language
+ * Author:      Caspar Hübinger
+ * Author URI:  https://profiles.wordpress.org/glueckpress
+ * Plugin URI:  https://github.com/glueckpress/wordpress-post-language
  *
  * Text Domain: post-language
  * Domain Path: /lang
@@ -13,19 +13,19 @@
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version 2
- *	of the License, or (at your option) any later version.
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
  *
- *	This program is distributed in the hope that it will be useful,
- *	but WITHOUT ANY WARRANTY; without even the implied warranty of
- *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *	GNU General Public License for more details.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
  *
- *	You should have received a copy of the GNU General Public License
- *	along with this program; if not, write to the Free Software
- *	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
 if ( ! defined( 'ABSPATH' ) )

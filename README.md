@@ -1,7 +1,14 @@
-![wordpress-post-language-logo](https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/wordpress-post-language-logo.png?raw=true)
-
 # Post Language
+
+---
+
+__The aim of this plugin eventually has become a core endeavor thanks to @simonwheatley and others.__ You can follow progress—or better yet: __contribute!__—at [multilingualwp.wordpress.com](https://multilingualwp.wordpress.com/), or in [#core-i18n at the official WordPress Slack team](https://wordpress.slack.com/messages/core-i18n/).<br>This plugin will no longer be actively maintained, nor prepared to be proposed for WordPress core. You can, of course, still read the original synopsis.
+
+---
+
 ## Proposing a WordPress Core feature: Post Language
+
+<img src="https://github.com/glueckpress/wordpress-post-language/blob/master/assets/img/wordpress-post-language-logo.png?raw=true" height="120" width="120" align="left">
 
 Solutions to language related problems with content in WordPress are somewhat rare. Whereas a growing number of users publish content in other languages than default American English, WordPress Core up until today does not offer any feature to determine, nor to retrieve the language a post or page has been written in. This article aims to provide context and arguments for Trac ticket #_____ which proposes the implementation of a new Core feature: Post Language.
 
@@ -97,7 +104,8 @@ I am convinced a Post Language selection field as described above would embody a
 <h3 id="feedback">Feedback</h3>
 [Yes please, just take the time reading through issues first. If you’re not a developer and just would like your support, we’d appreciate a tweet or blog post rather than an issue comment.](https://github.com/glueckpress/wordpress-post-language/issues/)
 
-<hr>
+---
+
 ## Collaborators
 * @glueckpress
 * @neverything
